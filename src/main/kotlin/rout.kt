@@ -57,7 +57,7 @@ fun Route.student (
 
         }
         catch (e: Throwable) {
-            call.respondText("${e.message}", status = HttpStatusCode.OK)
+            call.respondText("${e.message}", status = HttpStatusCode.Unauthorized)
         }
 
     }
